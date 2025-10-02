@@ -73,7 +73,7 @@ public class Robot {
        // Det kan ikke være mandag. Da er danseklubben stengt.
 
     public void Club(World world){
-        if(botType.equals("B-Bot")&& batteryLevel>=50 && world.isMonday()){
+        if(botType.equals("B-Bot")&& batteryLevel>=50 && !world.isMonday()){
             System.out.println("--------- Dance ---------");
             System.out.println("Bottype:--------- "+ botType);
             System.out.println("Mandag:---------- "+ world.isMonday());
